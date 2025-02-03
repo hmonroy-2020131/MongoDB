@@ -9,7 +9,7 @@ import limiter from '../src/middlewares/validar-cant-peticion.js';
 import authRoutes from '../src/auth/auth.routes.js';
  
  
-const configurarMiddlewares = (app) => {
+const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
     app.use(cors());
     app.use(express.json());
@@ -18,10 +18,8 @@ const configurarMiddlewares = (app) => {
     app.use(limiter);
 }
  
-const configurarRutas = (app) =>{
-    const autoPath = '/adoptionSystem/v1/auth';
- 
-    app.use(autoPath, authRoutes);
+const routes = (app) =>{
+    app.use("/adoptionSystem/v1/auth", authRoutes);
 }
  
 const conectarDB = async () => {
@@ -34,16 +32,19 @@ const conectarDB = async () => {
     }  
 }
  
-export const iniciarServidor = async () =>{
+export const initServer = async () =>{
     const app = express();
-    const port = process.env.PORT || 3002;
+    const port = process.env.PORT || 3001;
+
+    try {
+        middlewares(app);
+        conectarDB();
+        routes(app);
+        app.listen(port);
+        console.log(`Server running on port: ${port}`);
+    } catch (err) {
+        console.log(`Server init failed: ${err}`)
+    }
  
-    await conectarDB();
- 
-    configurarMiddlewares(app);
-    configurarRutas(app);
- 
-    app.listen(port, () => {
-        console.log(`Server Running on  port ${port}`);
-    });
+    
 }
