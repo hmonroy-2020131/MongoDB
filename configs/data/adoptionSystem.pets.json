@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "67aa2d5ad5640c32090f94e4"
+  },
+  "name": "Max",
+  "description": "Perro",
+  "age": 3,
+  "type": "Perro",
+  "keeper": {
+    "$oid": "67aa1b2de14402b989ddac71"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-10T16:46:18.427Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-10T16:59:34.814Z"
+  }
+}]

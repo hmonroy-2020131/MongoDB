@@ -1,0 +1,79 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "pets",
+    "collectionId": "0db53c70-0180-4b0f-a15d-54feb34126ba",
+    "dateExported": "2025-02-10T17:20:46.582Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fc9022cf-edbe-4a04-9840-0431cef23066",
+            "colId": "0db53c70-0180-4b0f-a15d-54feb34126ba",
+            "containerId": "",
+            "name": "agregar pet",
+            "url": "http://localhost:3001/adoptionSystem/v1/pets/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-10T16:45:22.177Z",
+            "modified": "2025-02-10T16:46:18.450Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyMDU4NDIsImV4cCI6MTczOTIwOTQ0Mn0.TTRJZenZgIyb851CuVQtD6vDd8oxtAQOekPtI9ssbMg"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Animal\",\n  \"description\": \"hola\",\n  \"age\": \"3\",\n  \"type\": \"perro\",\n  \"email\": \"abso@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f5b904f7-9153-4837-a716-058153da2c4e",
+            "colId": "0db53c70-0180-4b0f-a15d-54feb34126ba",
+            "containerId": "",
+            "name": "Listar pets",
+            "url": "http://localhost:3001/adoptionSystem/v1/pets/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-10T16:54:05.948Z",
+            "modified": "2025-02-10T16:56:04.643Z",
+            "headers": []
+        },
+        {
+            "_id": "31b9e548-48ca-42f4-949f-72e613bc4a10",
+            "colId": "0db53c70-0180-4b0f-a15d-54feb34126ba",
+            "containerId": "",
+            "name": "Listar pets por id",
+            "url": "http://localhost:3001/adoptionSystem/v1/pets/67aa2d5ad5640c32090f94e4",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-10T16:55:14.937Z",
+            "modified": "2025-02-10T16:56:08.231Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyMDYyNDAsImV4cCI6MTczOTIwOTg0MH0.zyCnF3JUdF7eI9dD22p6A7nyDX1TtaygrN2WHRBscjU"
+                }
+            ]
+        },
+        {
+            "_id": "7c3df2a7-4e53-49c3-b3e9-ce38fccbbd3d",
+            "colId": "0db53c70-0180-4b0f-a15d-54feb34126ba",
+            "containerId": "",
+            "name": "Eliminar pets",
+            "url": "http://localhost:3001/adoptionSystem/v1/pets/67aa2d5ad5640c32090f94e4",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-02-10T16:56:54.431Z",
+            "modified": "2025-02-10T16:57:46.608Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyMDYyNDAsImV4cCI6MTczOTIwOTg0MH0.zyCnF3JUdF7eI9dD22p6A7nyDX1TtaygrN2WHRBscjU"
+                }
+            ]
+        }
+    ],
+    "ref": "VIXtoTuTgjnn7geKXqV-8MJuGosmbNS-GWTYVRAiDX66TAKx-r46K5opRbOwXpJ6Mw3iwOWsTgrdzrkRnJ8ogw"
+}

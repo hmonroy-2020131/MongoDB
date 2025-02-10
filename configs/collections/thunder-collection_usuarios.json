@@ -1,0 +1,57 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "usuarios",
+    "collectionId": "04f2c3a9-239f-400f-a320-17acd1403d43",
+    "dateExported": "2025-02-10T17:19:56.488Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "949ec946-8777-459f-871d-cc4c80802df7",
+            "colId": "04f2c3a9-239f-400f-a320-17acd1403d43",
+            "containerId": "",
+            "name": "eliminar usuario",
+            "url": "http://localhost:3001/adoptionSystem/v1/users/67aa1b2de14402b989ddac71",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2025-02-10T16:48:16.058Z",
+            "modified": "2025-02-10T16:51:23.613Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyMDYyNDAsImV4cCI6MTczOTIwOTg0MH0.zyCnF3JUdF7eI9dD22p6A7nyDX1TtaygrN2WHRBscjU"
+                }
+            ]
+        },
+        {
+            "_id": "0b37ddd1-5a5a-4dab-b693-3085cb31fa15",
+            "colId": "04f2c3a9-239f-400f-a320-17acd1403d43",
+            "containerId": "",
+            "name": "listar usuarios",
+            "url": "http://localhost:3001/adoptionSystem/v1/users/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-10T16:48:44.017Z",
+            "modified": "2025-02-10T16:48:52.395Z",
+            "headers": []
+        },
+        {
+            "_id": "1fe2b0cd-640e-45b7-98d2-990dbff714a3",
+            "colId": "04f2c3a9-239f-400f-a320-17acd1403d43",
+            "containerId": "",
+            "name": "Editar usuario",
+            "url": "http://localhost:3001/adoptionSystem/v1/users/67aa1b4ee14402b989ddac79",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-02-10T17:12:34.593Z",
+            "modified": "2025-02-10T17:14:59.768Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Jose\",\n  \"surname\": \"Carlos\",\n  \"username\": \"jc\",\n  \"email\": \"jc@gmail.com\",\n  \"profilePicture\": null,\n  \"phone\": \"12345678\",\n  \"role\": \"ADMIN_ROLE\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "R8fL8O3XhWY7ZwlHdf8TXtkabM9yWZwATwMuLI77jPtOCcIIWutYskQJe3wr1WlavL1AHGVkx-fl4Hdkp_zMdQ"
+}
