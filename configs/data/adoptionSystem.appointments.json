@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "67ab7de8892e3b1184a6e3ee"
+  },
+  "pet": {
+    "$oid": "67aa2d5ad5640c32090f94e4"
+  },
+  "date": {
+    "$date": "2025-10-15T00:00:00.000Z"
+  },
+  "reason": "Chequeo general",
+  "veterinarianName": "Dr. Juapi",
+  "status": "completada",
+  "createdAt": {
+    "$date": "2025-02-11T16:42:16.873Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-11T16:44:01.928Z"
+  }
+}]

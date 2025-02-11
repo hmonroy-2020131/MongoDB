@@ -1,0 +1,77 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "appointment",
+    "collectionId": "64f40fa4-4fac-44fc-be16-28140fade3ba",
+    "dateExported": "2025-02-11T16:45:44.545Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "568d87e7-fcc5-4ce1-9d2c-1e0f648f7bc5",
+            "colId": "64f40fa4-4fac-44fc-be16-28140fade3ba",
+            "containerId": "",
+            "name": "appointment",
+            "url": "http://localhost:3001/adoptionSystem/v1/appointment/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-11T16:40:53.271Z",
+            "modified": "2025-02-11T16:42:16.885Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyOTE0MzIsImV4cCI6MTczOTI5NTAzMn0.F3MrONiBnAAU_QMj9iig_U8nWUfQBcmocMYlncA8UDY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"petId\": \"67aa2d5ad5640c32090f94e4\",\r\n  \"date\": \"2025-10-15\",\r\n  \"reason\": \"Chequeo general\",\r\n  \"veterinarianName\": \"Dr. Juapi\",\r\n  \"status\": \"completada\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "50c59f18-c709-4900-bec5-2c3e90f4c160",
+            "colId": "64f40fa4-4fac-44fc-be16-28140fade3ba",
+            "containerId": "",
+            "name": "appointment delete",
+            "url": "http://localhost:3001/adoptionSystem/v1/appointment/67ab7c8f892e3b1184a6e3e8",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2025-02-11T16:42:42.870Z",
+            "modified": "2025-02-11T16:43:04.977Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyOTE0MzIsImV4cCI6MTczOTI5NTAzMn0.F3MrONiBnAAU_QMj9iig_U8nWUfQBcmocMYlncA8UDY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"petId\": \"67aa2d5ad5640c32090f94e4\",\n  \"date\": \"2025-10-15\",\n  \"reason\": \"Chequeo general\",\n  \"veterinarianName\": \"Dr. Juapi\",\n  \"status\": \"completada\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "91260e04-ad03-4e17-b9b3-8b0b38772d5e",
+            "colId": "64f40fa4-4fac-44fc-be16-28140fade3ba",
+            "containerId": "",
+            "name": "appointment update",
+            "url": "http://localhost:3001/adoptionSystem/v1/appointment/67ab7de8892e3b1184a6e3ee",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-02-11T16:43:14.701Z",
+            "modified": "2025-02-11T16:44:01.935Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FhMWI0ZWUxNDQwMmI5ODlkZGFjNzkiLCJpYXQiOjE3MzkyOTE0MzIsImV4cCI6MTczOTI5NTAzMn0.F3MrONiBnAAU_QMj9iig_U8nWUfQBcmocMYlncA8UDY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"petId\": \"67aa2d5ad5640c32090f94e4\",\n  \"date\": \"2025-10-15\",\n  \"reason\": \"Chequeo general\",\n  \"veterinarianName\": \"Dr. Juapi\",\n  \"status\": \"completada\"\n}\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "2rMcUqBxviadMGUV6n62bZMNSfWSN2EIZyXk9dut1N63NC8Db3Sn-UOMSW-x8Hc693QFSKTDy_Wv4C1nV3LSUQ"
+}

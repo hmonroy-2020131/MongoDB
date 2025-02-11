@@ -104,3 +104,29 @@ export const deleteUser = async (req, res) => {
         })
     }
 }
+
+export const updateUserPassword = async (req, res = response) => {
+    try {
+        const { id } = req.params;
+        const { password } = req.body;
+        if (!password) {
+            return res.status(400).json({
+                success: false,
+                msg: 'La contraseña es requerida'
+            });
+        }
+        const hashedPassword = await hash(password);
+        const user = await User.findByIdAndUpdate(id, { password: hashedPassword }, { new: true });
+        res.status(200).json({
+            success: true,
+            msg: 'Usuario Actualizado',
+            user
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error al actualizar el usuario',
+            error
+        });
+    }
+};
